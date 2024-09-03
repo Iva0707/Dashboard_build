@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#188de7">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="assets/img/favicon.icon.svg" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header>
+    </header>
+
+
+    <body class="home">
+        <div class="container">
+            <div class="sidebar">
+                <div class="sidebar__logo-row">
+                    <a class="sidebar__logo" href="index.html">
+                <img src="assets/img/dashboard_logo.svg" alt="logo">
+            </a>
+                    <span class="sidebar__update-version">v.01</span>
+                </div>
+                <nav class="sidebar__nav">
+                    <ul class="sidebar__nav-list">
+                        <li class="sidebar__list-item"><img src="assets/img/dashboard_icon.svg" alt="icon">Dashboard</li>
+                        <li class="sidebar__list-item"><img src="assets/img/product_icon.svg" alt="icon">Product</li>
+                        <li class="sidebar__list-item"><img src="assets/img/customers_icon.svg" alt="icon">Customers</li>
+                        <li class="sidebar__list-item"><img src="assets/img/income_icon.svg" alt="icon">Income</li>
+                        <li class="sidebar__list-item"><img src="assets/img/promote_icon.svg" alt="icon">Promote</li>
+                        <li class="sidebar__list-item"><img src="assets/img/help_icon.svg" alt="icon">Help</li>
+                    </ul>
+                </nav>
+                <div class="sidebar__user-row">
+                    <div class="sidebar__user-photo">
+                        <img src="assets/img/user_photo.png" alt="user">
+                    </div>
+                    <div class="sidebar__user-info">
+                        <span class="sidebar__user-name">Evano</span>
+                        <span class="sidebar__user-position">Project Manager</span>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content__header-row">
+                    <h1 class="content__title">Hello Evano 👋🏼,</h1>
+                    <div id="burger" class="content__burger-container">
+                        <div class="content__button-burger"></div>
+                    </div>
+                </div>
+                <div class="content__container">
+                    <div class="content__info-row">
+                        <div class="content__info-column">
+                            <h2 class="content__subtitle">All Customers</h2>
+                            <button class="content__active-customers">Active Members</button>
+                        </div>
+                        <div class="content__info-search">
+                            <div>
+                                <label for="search"></label>
+                                <input type="search" placeholder="Search" id="search" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__table-wrapper">
+                        <table class="content__table">
+                            <thead>
+                                <tr class="content__table-head">
+                                    <th>Customer Name</th>
+                                    <th>Company</th>
+                                    <th>Phone Number</th>
+                                    <th>Email</th>
+                                    <th>Country</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table_body">
+                                <tr class="content__table-body">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="content__table-status"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="content__footer">
+                        <div class="content__footer-row">
+                            <p class="content__footer-info">Showing data 1 to 8 of 256K entries</p>
+                            <div class="content__footer-pagination">
+                                <button class="content__footer-prev content__footer-arrow"></button>
+                                <ul class="content__footer-list">
+                                    <li class="content__footer-item content__footer-item--active"><a href="#">1</a></li>
+                                    <li class="content__footer-item"><a href="#">2</a></li>
+                                    <li class="content__footer-item"><a href="#">3</a></li>
+                                    <li class="content__footer-item"><a href="#">4</a></li>
+                                    <li class="content__footer-item content__footer-item--drops">...</li>
+                                    <li class="content__footer-item"><a href="#">40</a></li>
+                                </ul>
+                                <button class="content__footer-next content__footer-arrow"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+    </footer>
+    <script async src="assets/js/custom.js"></script>
+    <script async src="assets/js/arr.js"></script>
+</body>
+
+</html>
